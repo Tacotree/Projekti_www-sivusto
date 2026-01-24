@@ -142,42 +142,58 @@ main{
 
 .hero-taustakuva h1{
 
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
+
 .hero-taustakuva p{
 
-    font-size: 20px;
+    font-size: 24px;
     opacity: 0.9;
-}
-
-.hero-taustakuva h2{
-
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 20px;
+    font-weight: 700;
+    margin-top: 1px;
+    margin-bottom: 8px;
+    
 }
 
 .valinta-rivi{
 
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 30px; 
     flex-wrap: wrap;
+    margin-top: 1px;
+
 }
 
-.valinta-nappi{
+.valinta-painike{
 
     background-color: #2E2E2E;
     border: none;
-    padding: 10px 20px;
-    border-radius: 12px;
+    padding: 8px 20px;
+    border-radius: 999px;
     color: #E1E1E1;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 550;
+    box-shadow: 0 2px 8px rgb(0,0,0.35);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+
 }
+
+.valinta-painike:hover{
+    background-color: #3A3A3A;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.45);
+}
+
+
 
 .slider-kontti{
     display: flex;
@@ -186,10 +202,20 @@ main{
     gap: 8px;
 }
 
-.neliöt-slider{
-    width: 70%;
-    accent-color: #6F54A8;
+.neliot-slider{
+    width: 30%;
+    accent-color: #2761f5;
 }
+
+.neliot {
+    font-size: 16px;
+    background-color: #2E2E2E;
+    padding: 5px 16px;
+    border-radius: 12px;
+}
+
+
+
 
 
 

@@ -35,25 +35,25 @@
         <section class="hero-taustakuva">
         <h1>Haluaisitko tietää paljonko kotisi siivous maksaisi?</h1>
         <p>Laske hinta-arvio sekunneissa!</p>
-        <h2>Kotisiivouksen tyyppi</h2>
+        <p>Kotisiivouksen tyyppi</p>
 
         <div class="valinta-rivi">
         <button class="valinta-painike">Säännöllisesti jatkuvalla sopimuksella</button>
         <button class="valinta-painike">Kerran, yksittäisenä kertakäyntinä</button>
         </div>
-        
+
         <p>Valitse neliöiden määrä</p>
 
         <div class="slider-kontti">
-            <span class="neliöt">65 m²</span>
-            <input type="range" min="0" max="300" value="65" class="Neliöt-slider">
+            <span class="neliot" id="neliot">65 m²</span>
+            <input type="range" min="0" max="300" value="65" class="neliot-slider" id="neliot-slider">
         </div>
 
         <button>Seuraava</button>
         
 
         <article>
-            <h3>"Puhdas koti, siistimpi arki!"</h3>
+            <h2>"Puhdas koti, siistimpi arki!"</h2>
             <p>Koti on paikka, jossa kuuluu voida rentoutua.
             Me huolehdimme, että kotisi on puhdas, raikas ja viihtyisä - säännöllisesti tai silloin kun sinä tarvitset apua. 
             Siivoamme huolellisesti, luotettavasti ja sinun toiveitasi kuunnellen.</p>
@@ -93,6 +93,18 @@
         </nav>
 
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const slider = document.getElementById("neliot-slider");
+            const label = document.getElementById("neliot");
+            label.textContent = slider.value + " m²";
+            slider.addEventListener("input", function() {
+                label.textContent = slider.value + " m²";
+            });
+
+        });
+    </script>
     
 </body>
 </html>
