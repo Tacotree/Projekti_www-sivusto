@@ -32,14 +32,25 @@
         </header>
 
     <main>
+        <section class="hero-taustakuva">
         <h1>Haluaisitko tietää paljonko kotisi siivous maksaisi?</h1>
         <p>Laske hinta-arvio sekunneissa!</p>
         <h2>Kotisiivouksen tyyppi</h2>
-        <button>Säännöllisesti jatkuvalla sopimuksella</button>
-        <button>Kerran, yksittäisenä kertakäyntinä</button>
+
+        <div class="valinta-rivi">
+        <button class="valinta-painike">Säännöllisesti jatkuvalla sopimuksella</button>
+        <button class="valinta-painike">Kerran, yksittäisenä kertakäyntinä</button>
+        </div>
+        
         <p>Valitse neliöiden määrä</p>
-        <input type="range" min="0" max="200">
+
+        <div class="slider-kontti">
+            <span class="neliöt">65 m²</span>
+            <input type="range" min="0" max="300" value="65" class="Neliöt-slider">
+        </div>
+
         <button>Seuraava</button>
+        
 
         <article>
             <h3>"Puhdas koti, siistimpi arki!"</h3>
@@ -50,7 +61,7 @@
         <article>
             <img src="keittion_siivous.png" alt="Keittiön siivous">
             <img src="puhdas_olohuone.png" alt="Puhdas olohuone">
-        </article>
+        </article></section>
     </main> 
 
     <footer>

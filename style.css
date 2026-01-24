@@ -91,5 +91,100 @@ main{
     background-color: #6F54A8;
 }
 
+/*Hero taustakuva */
+
+.hero-taustakuva{
+
+    background-image: url("Group 1clean.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 60px 40px;
+    border-radius: 20px;
+    max-width: 1500px;
+    margin: 40px auto;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.hero-taustakuva {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-taustakuva::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+.hero-taustakuva > * {
+    position: relative;
+    z-index: 1; 
+}
+
+.hero-taustakuva h1{
+
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-taustakuva p{
+
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.hero-taustakuva h2{
+
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.valinta-rivi{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.valinta-nappi{
+
+    background-color: #2E2E2E;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #E1E1E1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.slider-kontti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.neliöt-slider{
+    width: 70%;
+    accent-color: #6F54A8;
+}
+
+
+
+
 
 
