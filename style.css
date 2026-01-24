@@ -1,0 +1,69 @@
+/* Nollataan marginit, jotta tausta oikeasti alkaa aivan ikkunan yläreunasta */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*taustagradientti koko sivulle */
+html, body {
+    height: 100%;
+}
+
+/*Varsinainen tausta ja fontin määritys */
+body {
+  margin: 0;
+  height: 100vh;   
+  background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
+   
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #E1E1E1;
+}
+
+/* Headerin asettelu*/
+
+.sivu-header{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+}
+
+.logo-alue{
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.pää-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.pää-nav a{
+    color: #E1E1E1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cta-button{
+    background-color: #76646F;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+

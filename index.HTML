@@ -9,40 +9,49 @@
     <title>Siivouspalvelut Turbokliini</title>
 </head>
 <body>
-    <header>
-        <a href="index.HTML">
-        <img src="Logo/LogoPieni.png" alt="logo">
-        </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.HTML">Etusivu</a></li>
-                <li><a href="#"></a>Tietoa meistä</a></li>
-                <li><a href="#"></a>Palvelut</a></li>
-                <li><a href="#"></a>Yhteystiedot</a></li>
-                <button>Tilaa siivous</button>
-            </ul>
-    </nav>
-    </header>
-    <h1>Haluaisitko tietää paljonko kotisi siivous maksaisi?</h1>
-    <p>Laske hinta-arvio sekunneissa!</p>
-    <h2>Kotisiivouksen tyyppi</h2>
-    <button>Säännöllisesti jatkuvalla sopimuksella</button>
-    <button>Kerran, yksittäisenä kertakäyntinä</button>
-    <p>Valitse neliöiden määrä</p>
-    <input type="range"> min="0" max="200">
-    <button>Seuraava</button>
+    <header class="sivu-header">
+        <div class="logo-alue">
+            <a href="index.HTML">
+            <img src="Logo/LogoPieni.png" alt="logo">
+            </a>
+            </div>
 
-    <article>
-        <h3>"Puhdas koti, siistimpi arki!"</h3>
-        <p>Koti on paikka, jossa kuuluu voida rentoutua.
+       
+
+            <nav class="pää-nav">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="#">Tietoa meistä</a></li>
+                    <li><a href="#">Palvelut</a></li>
+                    <li><a href="#">Yhteystiedot</a></li>
+                    <li><button>Tilaa siivous</button></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <h1>Haluaisitko tietää paljonko kotisi siivous maksaisi?</h1>
+        <p>Laske hinta-arvio sekunneissa!</p>
+        <h2>Kotisiivouksen tyyppi</h2>
+        <button>Säännöllisesti jatkuvalla sopimuksella</button>
+        <button>Kerran, yksittäisenä kertakäyntinä</button>
+        <p>Valitse neliöiden määrä</p>
+        <input type="range" min="0" max="200">
+        <button>Seuraava</button>
+
+        <article>
+            <h3>"Puhdas koti, siistimpi arki!"</h3>
+            <p>Koti on paikka, jossa kuuluu voida rentoutua.
             Me huolehdimme, että kotisi on puhdas, raikas ja viihtyisä - säännöllisesti tai silloin kun sinä tarvitset apua. 
             Siivoamme huolellisesti, luotettavasti ja sinun toiveitasi kuunnellen.</p>
-    </article>
-    <article>
-        <img src="" alt="Keittiön siivous">
-        <img src="" alt="Puhdas olohuone">
-    </article>
+        </article>
+        <article>
+            <img src="" alt="Keittiön siivous">
+            <img src="" alt="Puhdas olohuone">
+        </article>
+    </main> 
+
     <footer>
         <nav>
             <strong>Meistä</strong>
