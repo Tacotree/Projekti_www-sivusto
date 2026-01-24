@@ -90,6 +90,14 @@ main{
 .tilaus-painike:hover{
     background-color: #6F54A8;
 }
+.some-kuvat {
+    text-align: center;
+}
+.some-kuvat img {
+    display: inline-block;
+    margin: 0 10px;
+    width: 28px;
+}
 
 
 
