@@ -13,7 +13,9 @@ html, body {
 /*Varsinainen tausta ja fontin määritys */
 body {
   margin: 0;
-  height: 100vh;   
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
    
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -59,6 +61,7 @@ body {
 main{
     padding-top: 40px;
     padding-inline: 40px;
+    flex: 1;
 }
 
 .pää-nav ul {
@@ -178,19 +181,16 @@ main{
     cursor: pointer;
     font-size: 18px;
     font-weight: 550;
-    box-shadow: 0 2px 8px rgb(0,0,0.35);
+    box-shadow: 0 2px 8px rgb(0,0,1);
 
-    transition:
-        background-color 0.2s ease,
-        transform 0.15s ease,
-        box-shadow 0.15s ease;
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
 
 }
 
 .valinta-painike:hover{
     background-color: #3A3A3A;
     transform: translateY(-1px);
-    box-shadow: 0 5px 14px rgba(0,0,0,0.45);
+    box-shadow: 0 5px 14px rgba(0,0,0,1);
 }
 
 
@@ -214,9 +214,26 @@ main{
     border-radius: 12px;
 }
 
+.seuraava-painike{
 
+    background-color: #2E2E2E;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 999px;
+    color: #E1E1E1;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 550;
+    box-shadow: 0 2px 8px rgb(0,0,1);
 
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
 
+}
+.seuraava-painike:hover{
+    background-color: #3A3A3A;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(0,0,0,1);
+}
 
 
 
