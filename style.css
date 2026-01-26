@@ -234,6 +234,21 @@ main{
     transform: translateY(-1px);
     box-shadow: 0 5px 14px rgba(0,0,0,1);
 }
+.footer {
+    background-color: black;
+    color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer nav a {
+    color:white;
+    margin-left: 1rem;
+}
+footer nav a:focus {
+    outline: 2px solid white;
+}
 
 
 
