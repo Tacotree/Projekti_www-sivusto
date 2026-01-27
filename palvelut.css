@@ -98,18 +98,27 @@ main{
     margin: 0 10px;
     width: 28px;
 }
-.footer {
+footer {
     background-color: black;
     color:white;
-    padding: 20px;
+    padding: 50px;
     display: flex;
+    gap: 30px;
+    border-radius: 30px;
     justify-content: space-between;
     width: 100%;
 }
 footer nav a {
     color:white;
     margin-left: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
 }
 footer nav a:focus {
     outline: 2px solid white;
+}
+.footer-section {
+    margin-bottom: 20px;
 }
