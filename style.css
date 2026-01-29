@@ -169,37 +169,61 @@ main{
 }
 .info-rivi{
     display: flex;
-    gap: 40px;
+    gap: 90px;
     margin-top: 50px;
     align-items: flex-start;
+    
 }
 .info-vasen{
     flex: 1;
 }
 .info-kuva-pysty{
     width: 100%;
-    max-width: 320px;
+    max-width: 460px;
     height: auto;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0,0.4);
+    box-shadow: 0 6px 16px rgba(0, 0, 0,0.6);
+}
+.info-oikea h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
 }
 .info-oikea{
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     text-align: left;
-    max-width: 500px;
+    gap: 8px;
+    max-width: 550px;
+    
+}
+
+.info-oikea-teksti{
+    line-height: 1.6;
+    font-size: 16px; 
+    margin: 0;
+        
+}
+
+.hero-content{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .info-kuva-vaaka{
     width: 100%;
-    max-width: 420px;
+    max-width: 700px;
     height: auto;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0,0.4);
+    box-shadow: 0 6px 16px rgba(0, 0, 0,0.6);
+    margin: 0;
 }
 
 /*Responsiivisuus*/
@@ -296,7 +320,7 @@ footer {
     padding: 50px;
     display: flex;
     gap: 30px;
-    border-radius: 30px;
+   
     justify-content: space-between;
     width: 100%;
 }
