@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
+  background-attachment: fixed;
    
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -162,6 +163,60 @@ main{
     
 }
 
+.hero-sisalto{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.info-rivi{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    align-items: flex-start;
+}
+.info-vasen{
+    flex: 1;
+}
+.info-kuva-pysty{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0,0.4);
+}
+.info-oikea{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.info-kuva-vaaka{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0,0.4);
+}
+
+/*Responsiivisuus*/
+@media (max-width: 900px){
+    .info-rivi{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-vasen, .info-oikea{
+        max-width: 90%;
+    }
+    .info-oikea{
+        text-align: center;
+    }
+}
+
+
 .valinta-rivi{
 
     display: flex;
@@ -259,7 +314,6 @@ footer nav a:focus {
 .footer-section {
     margin-bottom: 20px;
 }
-
 
 
 
