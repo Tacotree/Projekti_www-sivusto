@@ -12,14 +12,15 @@ html, body {
 
 /*Varsinainen tausta ja fontin määritys */
 body {
-  margin: 0;
-  height: 100vh;   
-  background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
+    min-height: 100vh;   
+    background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
    
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 1.5;
     color: #E1E1E1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Headerin asettelu*/
@@ -57,8 +58,11 @@ body {
 }
 
 main{
+    flex: 1;
     padding-top: 40px;
     padding-inline: 40px;
+    padding-bottom: 80px;
+    display: block;
 }
 
 .pää-nav ul {
@@ -108,6 +112,9 @@ footer {
     border-radius: 30px;
     justify-content: space-between;
     width: 100%;
+    margin-top: 40px;
+    position: relative;
+    clear: both;
 }
 footer nav a {
     color:white;
@@ -122,4 +129,28 @@ footer nav a:focus {
 }
 .footer-section {
     margin-bottom: 20px;
+}
+.palvelut-teksti {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.palvelut-teksti h1 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+.esittely {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #bdbdbd;
+}
+.palvelut-teksti h2 {
+    margin-top: 30px;    
+    margin-bottom: 10px; 
+    font-size: 28px;
+    color: #ffffff;
+}
+.palvelu-tekstit p {
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
