@@ -99,6 +99,10 @@ main{
     margin: 0 10px;
     width: 28px;
 }
+iframe {
+    border-style: 0;
+    
+}
 footer {
     background-color: black;
     color:white;
