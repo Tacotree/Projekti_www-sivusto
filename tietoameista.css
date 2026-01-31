@@ -167,6 +167,9 @@ footer nav a {
 footer nav a:focus {
     outline: 2px solid #E1E1E1;
 }
+.footer-section{
+    margin-bottom: 20px;
+}
 
 /*Mobiili*/
 @media (max-width: 600px){
@@ -215,12 +218,12 @@ footer nav a:focus {
         text-align: center;
     }
     .tilaus-painike{
-        
         width: 100%;
         max-width: 90px;
         font-size: 12px;
         padding: 5px 10px;
         white-space: nowrap;
+        text-align: center;
         
     }
     .tietoa-section h1{
@@ -265,6 +268,7 @@ footer nav a:focus {
         display: block;
         font-size: 14px;
         line-height: 1.4;
+        margin-left: 1rem;
     }
     .some-kuvat{
         text-align: left;
