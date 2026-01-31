@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
+  background: linear-gradient(to bottom,#1C1B1B 30%,#5F54A8 97%);
   background-attachment: fixed;
    
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -320,7 +320,7 @@ main{
         width: 100%;
         max-width: 90px;
         text-align: center;
-        padding: 9px 10px;
+        padding: 5px 10px;
         font-size: 12px;
         white-space: nowrap;
     }

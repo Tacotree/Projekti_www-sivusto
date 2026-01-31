@@ -12,14 +12,17 @@ html, body {
 
 /*Varsinainen tausta ja fontin määritys */
 body {
-  margin: 0;
-  height: 100vh;   
-  background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
-   
+    margin: 0;
+    min-height: 100vh;   
+    background: linear-gradient(to bottom, #1C1B1B 30%, #5F54A8 97%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 1.5;
     color: #E1E1E1;
+
 }
 
 /* Headerin asettelu*/
@@ -57,18 +60,56 @@ body {
 }
 
 main{
-    padding-top: 40px;
-    padding-inline: 40px;
+    padding-top: 50px;
+    padding-inline: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex: 1;
+}
+.tietoa-section h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tietoa-section p{
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.tiimi-section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.tiimi-section h2{
+    font-size: 26px;
+    margin-bottom: 16px;
+    
+}
+.tiimi-lista{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tiimi-lista li {
+    background: rgba(255, 255, 255,0.1);
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    backdrop-filter: blur(4px);
 }
 
-.pää-nav ul {
+.paa-nav ul {
     display: flex;
     align-items: center;
     gap: 32px;
     list-style: none;
+    font-size: 18px;
 }
 
-.pää-nav a{
+.paa-nav a{
     color: #E1E1E1;
     text-decoration: none;
     font-weight: 500;
@@ -101,16 +142,22 @@ main{
 }
 footer {
     background-color: black;
-    color:white;
+    color:#E1E1E1;
     padding: 50px;
     display: flex;
     gap: 30px;
-    border-radius: 30px;
     justify-content: space-between;
     width: 100%;
+    
+}
+footer nav strong{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: block;
 }
 footer nav a {
-    color:white;
+    color: #E1E1E1;
     margin-left: 1rem;
     display:flex;
     flex-direction: column;
@@ -118,8 +165,114 @@ footer nav a {
     justify-content: center;
 }
 footer nav a:focus {
-    outline: 2px solid white;
+    outline: 2px solid #E1E1E1;
 }
-.footer-section {
-    margin-bottom: 20px;
+
+/*Mobiili*/
+@media (max-width: 600px){
+    main{
+        padding: 18px;
+        max-width: 95%;
+    }
+    .sivu-header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 12px;
+        height: auto;
+        gap: 4px;
+    }
+    .logo-alue{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8;
+    }
+    .logo-alue img{
+        height: 36px;
+    }
+    .verkkosivun-otsikko{
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    .paa-nav{
+        width: 100%;
+    }
+    .paa-nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+    .paa-nav li{
+        width: 100%;
+        text-align: center;
+    }
+    .tilaus-painike{
+        
+        width: 100%;
+        max-width: 90px;
+        font-size: 12px;
+        padding: 5px 10px;
+        white-space: nowrap;
+        
+    }
+    .tietoa-section h1{
+        font-size: 24px;
+    }
+    .tietoa-section p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+    .tiimi-section h2{
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+    .tiimi-lista{
+        gap: 12px;
+    }
+    .tiimi-lista li{
+        font-size: 16px;
+        padding: 10px 12px;
+        border-radius: 10px;
+    }
+    .tiimi-section{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px 16px;
+    }
+    footer nav strong{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        display: block;
+    }
+    footer nav a{
+        margin-left: 0;
+        display: block;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .some-kuvat{
+        text-align: left;
+        margin-top: 16px
+    }
+    .some-kuvat img{
+        width: 28px;
+        margin: 0 10px;
+    }
+
 }
