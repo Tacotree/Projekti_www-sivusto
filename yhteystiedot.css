@@ -15,20 +15,21 @@ body {
   margin: 0;
   height: 100vh;   
   background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
-   
-    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #E1E1E1;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #E1E1E1;
+  
 }
 
 /* Headerin asettelu*/
 
 .sivu-header{
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
     padding: 0 40px;
     height: 80px;
@@ -57,18 +58,22 @@ body {
 }
 
 main{
-    padding-top: 40px;
-    padding-inline: 40px;
+    padding-top: 50px;
+    padding-inline: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex: 1;
 }
 
-.pää-nav ul {
+.paa-nav ul {
     display: flex;
     align-items: center;
     gap: 32px;
     list-style: none;
+    font-size: 18px;
 }
 
-.pää-nav a{
+.paa-nav a{
     color: #E1E1E1;
     text-decoration: none;
     font-weight: 500;
@@ -103,6 +108,36 @@ iframe {
     border-style: 0;
     
 }
+footer {
+    background-color: black;
+    color:#E1E1E1;
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+footer nav strong{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: block;
+}
+footer nav a {
+    color: #E1E1E1;
+    margin-left: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+footer nav a:focus {
+    outline: 2px solid #E1E1E1;
+}
+.footer-section{
+    margin-bottom: 20px;
+}
 /*Responsiivisuus*/
 @media (max-width: 600px){
 
@@ -110,6 +145,8 @@ iframe {
         font-size: 16px;
     }
     main {
+        padding: 18px;/*poista?*/
+        max-width: 95%;
         padding-inline: 8px;
         padding-top: 16px;
     }
@@ -251,16 +288,17 @@ iframe {
 }
 footer {
     background-color: black;
+    flex-direction: column;
+    align-items: flex-start;
     color:white;
-    padding: 50px;
+    padding: 24px 16px;
     display: flex;
-    gap: 30px;
-    border-radius: 30px;
+    gap: 16px;
     justify-content: space-between;
     width: 100%;
 }
 footer nav a {
-    color:white;
+    color:#E1E1E1;
     margin-left: 1rem;
     display:flex;
     flex-direction: column;
