@@ -31,4 +31,81 @@
             </nav>
         </header>
 
-<main>
+<div>
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Officiis vero hic ut repellat distinctio, asperiores laudantium nulla recusandae dolor adipisci quaerat veritatis illo molestiae et 
+    harum enim atque quas natus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, dolores, dolor ullam ea eligendi quibusdam aliquam vitae 
+    tempore accusantium aperiam aspernatur unde sunt ratione quo vero quasi itaque. Nobis, delectus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis nobis ex enim, 
+    in quis! Quibusdam adipisci aliquam, facilis quasi necessitatibus natus, doloribus quam officiis, asperiores beatae laudantium minus eius.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Eveniet blanditiis atque sunt fugit itaque, consectetur odio nisi neque iste, similique quos voluptate nulla excepturi in sapiente sit? Accusamus, quos quo.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla impedit illum a et porro vero deserunt esse molestias assumenda dignissimos officiis saepe commodi 
+    culpa dicta dolor, nihil laudantium, repellendus alias.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque consequuntur esse dolorem in minima, 
+    iusto tempora earum pariatur reprehenderit reiciendis maxime voluptatum repudiandae iste laborum. Tempore dolorum voluptate libero earum!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus esse culpa facilis commodi consequatur nihil voluptatem quo dignissimos earum labore, iure quia. 
+    Necessitatibus, pariatur? Incidunt eos reiciendis autem quasi!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis ea, 
+    iusto temporibus amet non provident laboriosam a ipsam saepe praesentium, quae repudiandae ad totam modi unde quasi molestias dolore?
+</div>
+    <main>
+    <div class="valinta-rivi">
+        <button class="valinta-painike">Säännöllisesti jatkuvalla sopimuksella</button>
+        <button class="valinta-painike">Kerran, yksittäisenä kertakäyntinä</button>
+        </div>
+
+        <p>Valitse neliöiden määrä</p>
+
+        <div class="slider-kontti">
+            <span class="neliot" id="neliot">65 m²</span>
+            <input type="range" min="0" max="300" value="65" class="neliot-slider" id="neliot-slider">
+        </div>
+
+       <div class="hero-content">
+        <button class="tilaus-painike">Tilaa nyt</button>
+         <script>    /*sliderin toiminnallisuus*/
+        document.addEventListener("DOMContentLoaded", function(){
+            const slider = document.getElementById("neliot-slider");
+            const label = document.getElementById("neliot");
+            label.textContent = slider.value + " m²";
+            slider.addEventListener("input", function() {
+                label.textContent = slider.value + " m²";
+            });
+
+        });
+    </script>
+</main>
+
+
+<footer>
+        <nav>
+            <strong>Meistä</strong>
+            <a href="index.html">Etusivu</a>
+            <a href="yhteystiedot.html">Tuki</a>
+            <a href="palvelut.html">Palvelut</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+        </nav>
+        <nav>
+            <strong>Saavutettavuus</strong>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="yhteystiedot.html">Ota yhteyttä</a>
+            <div class="some-kuvat">
+            <img src="fb.png" alt="Facebook logo">
+            <img src="ig.png" alt="Instagram logo">
+            <img src="X_icon.png" alt="X logo">
+            </div>
+        </nav>
+        <nav>
+            <strong>Yritystoiminta</strong>
+            <a href="#">Palaute</a>
+            <a href="#">Tietosuojaseloste</a>
+            <a href="#">Saavutettavuus</a>
+            <a href="#">Evästeet</a>
+        </nav>
+
+    </footer>
