@@ -12,13 +12,12 @@ html, body {
 
 /*Varsinainen tausta ja fontin määritys */
 body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(to bottom,#1C1B1B 25%,#5F54A8 97%);
-  background-attachment: fixed;
-   
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom,#1C1B1B 30%,#5F54A8 97%);
+    background-attachment: fixed;
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 1.5;
@@ -29,9 +28,7 @@ body {
 
 .sivu-header{
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
     padding: 0 40px;
     height: 80px;
@@ -65,14 +62,15 @@ main{
     flex: 1;
 }
 
-.pää-nav ul {
+.paa-nav ul {
     display: flex;
     align-items: center;
     gap: 32px;
     list-style: none;
+    font-size: 18px;
 }
 
-.pää-nav a{
+.paa-nav a{
     color: #E1E1E1;
     text-decoration: none;
     font-weight: 500;
@@ -80,7 +78,7 @@ main{
 
 .tilaus-painike{
     background-color: #76646F;
-    color: white;
+    color: #E1E1E1;
     border: none;
     padding: 8px 18px;
     border-radius: 999px;
@@ -104,130 +102,83 @@ main{
     width: 28px;
 }
 
-/*Hero taustakuva */
-
-.hero-taustakuva{
-
-    background-image: url("Group 1clean.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    padding: 60px 40px;
-    border-radius: 20px;
-    max-width: 1500px;
-    margin: 40px auto;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-
-    
+.neliot-otsikko {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-.hero-taustakuva {
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-taustakuva::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    z-index: 0;
-}
-
-.hero-taustakuva > * {
-    position: relative;
-    z-index: 1; 
-}
-
-.hero-taustakuva h1{
-
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    margin: 20px 0 8px;
 }
 
 
-.hero-taustakuva p{
-
-    font-size: 24px;
-    opacity: 0.9;
-    font-weight: 700;
-    margin-top: 1px;
-    margin-bottom: 8px;
-    
-}
-
-.hero-sisalto{
-    max-width: 1100px;
-    margin: 0 auto;
-}
-.info-rivi{
-    display: flex;
-    gap: 90px;
-    margin-top: 50px;
-    align-items: flex-start;
-    
-}
-.info-vasen{
-    flex: 1;
-}
-.info-kuva-pysty{
-    width: 100%;
-    max-width: 460px;
-    height: auto;
-    object-fit: cover;
+.yhteydenotto-lomake{
+    max-width: 600px;
+    margin: 40px auto 60px auto;
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 24px 28px;
     border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0,0.6);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
 }
-.info-oikea h2{
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0;
+.yhteydenotto-lomake h1{
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-align: center;
 }
-.info-oikea{
-    flex: 1;
+.lomake-rivi{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    gap: 8px;
-    max-width: 550px;
-    
+    gap: 6px;
+    margin-bottom: 16px;
+}
+.lomake-rivi label{
+    font-size: 14px;
+    font-weight: 600;
+}
+.lomake-rivi input,
+.lomake-rivi textarea{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #2E2E2E;
+    color: #E1E1E1;
+    font-family: inherit;
+    font-size: 16px;
+}
+.lomake-rivi input:focus,
+.lomake-rivi textarea:focus{
+    outline: 2px solid #6F54A8;
+    border-color: #6F54A8;
 }
 
-.info-oikea-teksti{
-    line-height: 1.6;
-    font-size: 16px; 
-    margin: 0;
-        
+.laheta-painike {
+    background-color: #76646F;
+    color: #E1E1E1;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0 auto;
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
-.hero-content{
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+.laheta-painike:hover {
+    background-color: #6F54A8;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(0,0,0,1);
 }
 
-.info-kuva-vaaka{
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0,0.6);
-    margin: 0;
+.laheta-painike:focus-visible {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 3px;
 }
 
 /*Responsiivisuus*/
 @media (max-width: 600px){
+
+    main{
+        padding: 18px;
+        max-width: 95%;
+    }
     .info-rivi{
         flex-direction: column;
         align-items: center;
@@ -240,29 +191,129 @@ main{
     }
     .sivu-header {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10 px 20 px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
         height: auto;
+        gap: 4px;
     }
-    .pää-nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
+    .logo-alue img{
+        height: 36px;
+    }
+    .logo-alue{
         width: 100%;
-        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
     }
+    .verkkosivun-otsikko{
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    .paa-nav{
+        width: 100%;
+    }
+    .paa-nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+    }
+    .paa-nav li{
+        width: 100%;
+        text-align: center;
+    }
+    .tilaus-painike{
+        width: 100%;
+        max-width: 90px;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .valinta-rivi{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 16px;
+    }
+    .valinta-painike{
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    .neliot-otsikko{
+        font-size: 16px;
+        margin: 16px 0 6px;
+    }
+    .slider-kontti{
+        width: 100%;
+        align-items: center;
+    }
+    .neliot-slider{
+        width: 90%;
+    }
+    .neliot{
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+
+    .yhteydenotto-lomake{
+        margin: 24px 12px 40px 12px;
+        padding: 16px 16px;
+        max-width: 100%;
+    }
+    
+    .yhteydenotto-lomake h1{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .lomake-rivi label{
+        font-size: 13px;
+    }
+    
+    .lomake-rivi input,
+    .lomake-rivi textarea{
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+    
+    .laheta-painike{
+        width: 100%;
+        max-width: 260px;
+        font-size: 15px;
+    }
+
     footer {
         flex-direction: column;
-        width: 100%;
-        gap: 40px;
-        text-align: center;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px 16px;
 
     }
     footer nav {
         align-items: center;
     }
+    footer nav a{
+        margin-left: 0;
+        font-size: 14px;
+        display: block;
+        line-height: 1.4;
+        margin-left: 1rem;
+    }
     .some-kuvat {
-        justify-content: center;
+        text-align: left;
+        margin-top: 16px;
+    }
+    .some-kuvat img{
+        width: 28px;
+        margin: 0 10px;
     }
 }
 
@@ -352,16 +403,18 @@ main{
 }
 footer {
     background-color: black;
-    color:white;
+    color: #E1E1E1;
     padding: 50px;
     display: flex;
     gap: 30px;
-   
     justify-content: space-between;
     width: 100%;
+    margin-top: 40px;
+    position: relative;
+    clear: both;
 }
 footer nav a {
-    color:white;
+    color:#E1E1E1;
     margin-left: 1rem;
     display:flex;
     flex-direction: column;
@@ -369,8 +422,5 @@ footer nav a {
     justify-content: center;
 }
 footer nav a:focus {
-    outline: 2px solid white;
-}
-.footer-section {
-    margin-bottom: 20px;
+    outline: 2px solid #E1E1E1;
 }

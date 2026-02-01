@@ -138,9 +138,6 @@ footer nav a {
 footer nav a:focus {
     outline: 2px solid #E1E1E1;
 }
-.footer-section {
-    margin-bottom: 20px;
-}
 .palvelut-teksti h1,
 .palvelut-teksti h2,
 .palvelut-teksti h3,

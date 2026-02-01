@@ -12,7 +12,7 @@
 <body>
     <header class="sivu-header">
         <div class="logo-alue">
-            <a href="index.HTML">
+            <a href="index.html">
             <img src="Logo/LogoPieni.png" alt="Turbokliin-logo">
             </a>
             <span class="verkkosivun-otsikko">TURBOKLIIN</span>
@@ -20,51 +20,41 @@
 
        
 
-            <nav class="pää-nav">
+            <nav class="paa-nav">
                 <ul>
                     <li><a href="index.html">Etusivu</a></li>
                     <li><a href="tietoameista.html">Tietoa meistä</a></li>
                     <li><a href="palvelut.html">Palvelut</a></li>
                     <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-                    <li><a href="tilaussivu.html" button class="tilaus-painike">Tilaa siivous</button></a></li>
+                    <li><a href="tilaussivu.html" class="tilaus-painike">Tilaa siivous</a></li>
                 </ul>
             </nav>
         </header>
 <main>
-    <section class="lorem-sisältö">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    <article>
+    <p> ipsum dolor sit amet, consectetur adipisicing elit. 
     Officiis vero hic ut repellat distinctio, asperiores laudantium nulla recusandae dolor adipisci quaerat veritatis illo molestiae et 
     harum enim atque quas natus!
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, dolores, dolor ullam ea eligendi quibusdam aliquam vitae 
     tempore accusantium aperiam aspernatur unde sunt ratione quo vero quasi itaque. Nobis, delectus!
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corporis nobis ex enim, 
     in quis! Quibusdam adipisci aliquam, facilis quasi necessitatibus natus, doloribus quam officiis, asperiores beatae laudantium minus eius.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Eveniet blanditiis atque sunt fugit itaque, consectetur odio nisi neque iste, similique quos voluptate nulla excepturi in sapiente sit? Accusamus, quos quo.
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla impedit illum a et porro vero deserunt esse molestias assumenda dignissimos officiis saepe commodi 
-    culpa dicta dolor, nihil laudantium, repellendus alias.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque consequuntur esse dolorem in minima, 
-    iusto tempora earum pariatur reprehenderit reiciendis maxime voluptatum repudiandae iste laborum. Tempore dolorum voluptate libero earum!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus esse culpa facilis commodi consequatur nihil voluptatem quo dignissimos earum labore, iure quia. 
-    Necessitatibus, pariatur? Incidunt eos reiciendis autem quasi!
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis ea, 
-    iusto temporibus amet non provident laboriosam a ipsam saepe praesentium, quae repudiandae ad totam modi unde quasi molestias dolore?
-    </section>
+    </p>
+    </article>
     
     <div class="valinta-rivi">
         <button class="valinta-painike">Säännöllisesti jatkuvalla sopimuksella</button>
         <button class="valinta-painike">Kerran, yksittäisenä kertakäyntinä</button>
         </div>
 
-        <p>Valitse neliöiden määrä</p>
+        <p class="neliot-otsikko">Valitse neliöiden määrä</p>
 
         <div class="slider-kontti">
             <span class="neliot" id="neliot">65 m²</span>
             <input type="range" min="0" max="300" value="65" class="neliot-slider" id="neliot-slider">
         </div>
 
-       <div class="hero-content">
-        <button class="tilaus-painike">Tilaa nyt</button>
+       
          <script>    /*sliderin toiminnallisuus*/
         document.addEventListener("DOMContentLoaded", function(){
             const slider = document.getElementById("neliot-slider");
@@ -76,6 +66,37 @@
 
         });
     </script>
+
+    <div class="yhteydenotto-lomake">
+        <h1>Yhteydenottolomake</h1>
+
+        <form action="#" method="post">
+            <div class="lomake-rivi">
+            <label for="nimi">Etu- ja sukunimi</label>
+            <input type="text" id="nimi" name="nimi" required>
+            </div>
+
+            <div class="lomake-rivi">
+                <label for="puhelin">Puhelinnumero</label>
+                <input type="tel" id="puhelin" name="puhelin" required>
+            </div>
+
+            <div class="lomake-rivi">
+                <label for="sahkoposti">Sähköposti</label>
+                <input type="email" id="sahkoposti" name="sahkoposti" required>
+            </div>
+
+            <div class="lomake-rivi">
+                <label for="lisatiedot">Lisätietoja</label>
+                <textarea id="lisatiedot" name="lisatiedot" rows="4"
+                placeholder="Voit kertoa tarkemmin kodistasi, toivotusta ajankohdasta tai muista tarpeista."></textarea>
+            </div>
+            <button type="submit" class="laheta-painike">
+                Lähetä Yhteydenottolomake
+            </button>
+
+        </form>
+    </div>
 </main>
 
 
