@@ -12,7 +12,7 @@
 
     <header class="sivu-header">
         <div class="logo-alue">
-            <a href="index.html">
+            <a href="index.php">
             <img src="Logo/LogoPieni.png" alt="Turbokliin-logo">
             </a>
             <span class="verkkosivun-otsikko">TURBOKLIIN</span>
@@ -22,11 +22,11 @@
 
             <nav class="paa-nav">
                 <ul>
-                    <li><a href="index.html">Etusivu</a></li>
-                    <li><a href="tietoameista.html">Tietoa meistä</a></li>
-                    <li><a href="palvelut.html">Palvelut</a></li>
-                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-                    <li><a href="tilaussivu.html" class="tilaus-painike">Tilaa siivous</a></li>
+                    <li><a href="index.php">Etusivu</a></li>
+                    <li><a href="tietoameista.php">Tietoa meistä</a></li>
+                    <li><a href="palvelut.php">Palvelut</a></li>
+                    <li><a href="yhteystiedot.php">Yhteystiedot</a></li>
+                    <li><a href="tilaussivu.php" class="tilaus-painike">Tilaa siivous</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,7 +50,7 @@
         </div>
 
        <div class="hero-content">
-        <a href="tilaussivu.html" class="seuraava-painike">Seuraava</a></button>
+        <a href="tilaussivu.php" class="seuraava-painike">Seuraava</a></button>
 
         
             <div class="info-rivi">
@@ -73,17 +73,17 @@
     <footer>
         <nav>
             <strong>Meistä</strong>
-            <a href="index.html">Etusivu</a>
-            <a href="yhteystiedot.html">Tuki</a>
-            <a href="palvelut.html">Palvelut</a>
-            <a href="yhteystiedot.html">Yhteystiedot</a>
+            <a href="index.php">Etusivu</a>
+            <a href="yhteystiedot.php">Tuki</a>
+            <a href="palvelut.php">Palvelut</a>
+            <a href="yhteystiedot.php">Yhteystiedot</a>
         </nav>
         <nav>
             <strong>Saavutettavuus</strong>
             <a href="#">Instagram</a>
             <a href="#">Twitter</a>
             <a href="#">Facebook</a>
-            <a href="yhteystiedot.html">Ota yhteyttä</a>
+            <a href="yhteystiedot.php">Ota yhteyttä</a>
             <div class="some-kuvat">
             <img src="fb.png" alt="Facebook logo">
             <img src="ig.png" alt="Instagram logo">
