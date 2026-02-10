@@ -74,7 +74,6 @@
         <nav>
             <strong>Meistä</strong>
             <a href="index.php">Etusivu</a>
-            <a href="yhteystiedot.php">Tuki</a>
             <a href="palvelut.php">Palvelut</a>
             <a href="yhteystiedot.php">Yhteystiedot</a>
         </nav>
